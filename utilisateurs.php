@@ -10,10 +10,8 @@ if(isset($_GET['P_CODE'])){
     //retourne tous les utilisateurs
     $response = Utilisateur::getAll();
 }
-//echo json_encode( $response);
-foreach($response as $tmp){
-    echo $tmp;
-}
+echo json_encode( $response);
+
 
 //$success = true;
 //
